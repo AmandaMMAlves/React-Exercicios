@@ -5,8 +5,9 @@ import Contador from './components/Contador'
 import Simples from './components/Simples'
 import ParImpar from './components/ParImpar'
 import {Reverse, Fibonnatti} from './components/Multi'
-
-import Posicionamento from './style/Posicionamento'
+import Evento from './components/Evento'
+import {Avo} from './components/ComunicacaoDireta'
+import Input from './components/ComunicacaoIndireta'
 
 export default createDrawerNavigator({
     Contador:{
@@ -25,5 +26,16 @@ export default createDrawerNavigator({
     },
     Simples: {
         screen: () => <Simples texto="EBAAA"/>
+    },
+    Evento: {
+        screen: () => <Evento/>
+    },
+    ComunicacaoDireta: {
+        screen: () => <Avo nome="Giuseppe" sobrenome="Benedito"/>
+        
+    },
+    Input:{
+        screen: () => <Input/>,
+        navigationOptions:{title: 'Input dahora'}
     }
 }, {drawerWidth: 200})

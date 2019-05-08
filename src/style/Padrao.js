@@ -29,5 +29,13 @@ export default StyleSheet.create({
     btnConfirmTxt: {
         fontSize: 25,
         textAlign: 'center'
+    },
+    txt40: {
+        fontSize:40
+    },
+    txtInput: {
+        borderColor: '#ccc',
+        fontSize: 24,
+        borderWidth: 1
     }
 })
